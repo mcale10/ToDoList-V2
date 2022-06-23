@@ -1,0 +1,23 @@
+<%- include("header") -%>
+
+    <div class="bg"></div>
+
+    <div class="star-field">
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+
+        <h2>This is the about page</h2>
+
+        <p>Some text</p>
+
+        <div class="box">
+            <div class="item" style="display: flex; justify-content: center;">
+                <form action="/newoldlist" method="post">
+                    <input type="text" name="newoldlist" placeholder="Enter name of a new/old list" autocomplete="off" style="margin-bottom: 3px;">
+                    <button type="submit" name="list">+</button>
+                </form>
+            </div>
+        </div>
+
+        <%- include("footer") -%>
